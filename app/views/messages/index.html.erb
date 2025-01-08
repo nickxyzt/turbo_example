@@ -1,0 +1,205 @@
+<h1>Messages</h1>
+<%= link_to "New message", new_message_path, data: {turbo_frame: 'new_message'} %>
+<%= turbo_frame_tag 'new_message' %>
+
+<%= turbo_frame_tag 'message_list' do %>
+  <div id="messages">
+    <%= render @messages %>
+  </div>
+<% end %>
+
+<style>
+  [class^="col"] {border: 1px solid; background-color: #e9aaaa}
+  .info-tool {background-color: rgb(207, 244, 252); border-left-color: rgb(158, 234, 249); border-left-width: 4px; border-left-style: solid; padding: 20px;}
+</style>
+
+<div class="container text-center">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-2 col-md-4">.col-2 .col-md-4</div>
+  </div>
+
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <div class="row">
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="row">
+    <div class="col-6">.col-6</div>
+    <div class="col-6">.col-6</div>
+  </div>
+</div>
+<hr>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-6">Column</div>
+    <div class="col-6">Column</div>
+    <div class="col-6">Column</div>
+    <div class="col-6">Column</div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container text-center info-tool">
+  <div class="row row-cols-3">
+    <div class="col">Column</div>
+    <div class="col">
+      <div class="row">
+        <div class="col"><strong>Col1</strong> <a href="abc">Link</a></div>
+        <div class="col">Col2</div>
+      </div>
+    </div>
+    <div class="col">Column</div>
+  </div>
+
+  <div class="row">
+    <div class="col-md">Col1</div>
+    <div class="col-md">Col2</div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container text-center" style="background-color: lightblue">
+  <div class="row align-items-center" style="height: 100px">
+    <div class="col order-2 order-md-1 offset-md-7 offset-lg-0">
+      One of three columns 2
+    </div>
+    <div class="col order-3 order-md-2">
+      One of three columns 3
+    </div>
+    <div class="col order-1 order-md-3">
+      One of three columns 1
+    </div>
+  </div>
+
+  <div class="col-3 p-3 mb-2">
+    .col-3: width of 25%
+  </div>
+</div>
+
+<hr>
+
+<div class="container px-4">
+  <div class="row gx-5">
+    <div class="col p-3">Custom column padding</div>
+    <div class="col p-3">Custom column padding</div>
+  </div>
+</div>
+
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col p-3">
+      Custom column padding
+    </div>
+    <div class="col p-3">
+      Custom column padding
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="container text-center">
+  <div class="row gx-5">
+    <div class="col">
+     <div class="p-3">Custom column padding</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Custom column padding</div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="container text-center">
+  <div class="row g-0 text-center">
+    <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+</div>
+
+<style>
+:root {
+    --myvar: #ff5733; /* Example: Set headings to a bright orange */
+  }
+</style>
+<div class="container">
+<h1 style="color: var(--myvar)">Antetn h1</h1>
+
+</div>
+For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+<br>
+For example, section should be wrapped as inline.
+<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+</code>
+For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+</pre>
+
+To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd><br>
+To edit settings, press <kbd>Ctrl + ,</kbd>
+<br>
+Result: <samp>Bad filename</samp>
+
+<table>
+  <caption>
+    This is an example table, and this is its caption to describe the contents.
+  </caption>
+  <thead>
+    <tr>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+    <tr>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+    <tr>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="lead">
+This is a lead paragraph. <span class="text-decoration-underline">It stands out from regular paragraphs.</span>
+</p>
+<p>fas<i>dfas</i>fasdfa</p>
+
+<ol class="list-unstyled">
+  <li>This is a list.</li>
+  <li>It appears completely unstyled.</li>
+  <li>Structurally, it's still a list.</li>
+  <li>However, this style only applies to immediate child elements.</li>
+  <li>Nested lists:
+    <ol>
+      <li>are unaffected by this style</li>
+      <li>will still show a bullet</li>
+      <li>and have appropriate left margin</li>
+    </ol>
+  </li>
+  <li>This may still come in handy in some situations.</li>
+</ol>
+<input type="button" value="Dimensiune" onclick="const screenWidth = window.innerWidth; alert(`Screen width: ${screenWidth}px`);">

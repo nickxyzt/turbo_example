@@ -1,0 +1,2 @@
+module TestFlashHelper
+end

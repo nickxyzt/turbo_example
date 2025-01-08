@@ -1,0 +1,5 @@
+<%= turbo_frame_tag 'defered_frame' do %>
+  <div style="background-color: gray">
+    <p>Acesta este continutul din pagina third care DEJA a inlocuit continutul de dinainte. Pentru a vedea ca se incarca in paralel (si a vedea continutul de dinainte), pune un byebug in articles#third si fa refresh.</p>
+  </div>
+<% end %>

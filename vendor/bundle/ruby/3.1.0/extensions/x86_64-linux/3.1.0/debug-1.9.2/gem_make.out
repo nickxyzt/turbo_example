@@ -1,0 +1,16 @@
+current directory: /home/nicolae/work/rails_projects/turbo_example/vendor/bundle/ruby/3.1.0/gems/debug-1.9.2/ext/debug
+/home/nicolae/.rbenv/versions/3.1.2/bin/ruby -I /home/nicolae/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20241212-108001-xnteo1.rb extconf.rb
+creating Makefile
+
+current directory: /home/nicolae/work/rails_projects/turbo_example/vendor/bundle/ruby/3.1.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= clean
+
+current directory: /home/nicolae/work/rails_projects/turbo_example/vendor/bundle/ruby/3.1.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/nicolae/work/rails_projects/turbo_example/vendor/bundle/ruby/3.1.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20241212-108001-oziqgr/debug

@@ -1,0 +1,8 @@
+<%= turbo_frame_tag 'part2' do %>
+  <% 50.times do %>
+    <%= Person.all.sample.name %><br />
+  <% end %>
+
+  <h1>ManyActions#part2</h1>
+  <p>Find me in app/views/many_actions/part2.html.erb</p>
+<% end %>

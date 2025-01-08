@@ -1,0 +1,4 @@
+<%= turbo_stream.prepend :message_list do %>
+  <%= render @message %>
+<% end %>
+<%= turbo_stream.update :new_message, '' %>

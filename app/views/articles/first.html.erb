@@ -1,0 +1,21 @@
+<div>Acesta este un div care NU va fi modificat de navigare</div>
+<div>Urmeaza turbo_frame-ul ce contine un div colorat: </div>
+  <%= turbo_frame_tag 'the_message' do %>
+    <div style="background-color: lightblue">
+      <p>Continutul paginii "first"</p>
+      <%= link_to "Second", articles_second_path %>
+    </div>
+  <% end %>
+<div>Acesta este un alt div care NU va fi modificat de navigare</div>
+<hr />
+
+<div>Urmeaza un turbo_frame "intarziat":</div>
+  <turbo-frame id="defered_frame" src="/articles/third">
+    <div style="background-color: orange">
+      <p>Continut initial care va fi suprascris imediat ce /articles/third termina de executat. Daca il vezi, inseamna ca este DEJA un byebug pus in articles#third</p>
+    </div>
+  </turbo-frame>
+</div>
+
+<%= turbo_frame_tag 'd2', src: 'abc' do %>
+<% end %>

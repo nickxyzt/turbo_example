@@ -1,0 +1,8 @@
+<div>Inainte, in afara SECOND</div>
+  <%= turbo_frame_tag 'the_message' do %>
+    <div style="background-color: lightgreen;">
+      <p>Continutul paginii "second"</p>
+      <%= link_to "First", articles_first_path %>
+    </div>
+  <% end %>
+<div>Dupa, in afara SECOND</div>
